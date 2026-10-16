@@ -1,6 +1,6 @@
 /* ==========================================================================
-   SREEJITH M - NIXTIO AI SAAS PORTFOLIO SCRIPT
-   Theme switcher, skills category filter, modal triggers & interactive feedback
+   SREEJITH M - DRIBBLE AI SAAS STYLE SCRIPT
+   Theme switcher, mobile navigation, and contact form handling
    ========================================================================== */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -8,27 +8,27 @@ document.addEventListener('DOMContentLoaded', () => {
   const yearEl = document.getElementById('year');
   if (yearEl) yearEl.textContent = new Date().getFullYear();
 
-  // 2. Dark / Light Theme Toggle (Default: Light, Switch to Dark)
+  // 2. Theme Switcher (Default: Light, Switch to Dark)
   const themeBtn = document.getElementById('theme-btn');
-  const savedTheme = localStorage.getItem('theme') || 'light';
+  const savedTheme = localStorage.getItem('dribbble_theme') || 'light';
   document.documentElement.setAttribute('data-theme', savedTheme);
 
   if (themeBtn) {
     themeBtn.addEventListener('click', () => {
       const current = document.documentElement.getAttribute('data-theme') || 'light';
-      const next = current === 'dark' ? 'light' : 'dark';
+      const next = current === 'light' ? 'dark' : 'light';
       document.documentElement.setAttribute('data-theme', next);
-      localStorage.setItem('theme', next);
+      localStorage.setItem('dribbble_theme', next);
     });
   }
 
   // 3. Mobile Navigation Drawer Toggle
   const mobileToggle = document.getElementById('mobile-toggle');
-  const navLinks = document.getElementById('nav-links');
+  const appNav = document.getElementById('app-nav');
 
-  if (mobileToggle && navLinks) {
+  if (mobileToggle && appNav) {
     mobileToggle.addEventListener('click', () => {
-      navLinks.classList.toggle('open');
+      appNav.classList.toggle('open');
       const icon = mobileToggle.querySelector('i');
       if (icon) {
         icon.classList.toggle('fa-bars');
@@ -36,9 +36,9 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
 
-    navLinks.querySelectorAll('a').forEach(link => {
+    appNav.querySelectorAll('.nav-item').forEach(link => {
       link.addEventListener('click', () => {
-        navLinks.classList.remove('open');
+        appNav.classList.remove('open');
         const icon = mobileToggle.querySelector('i');
         if (icon) {
           icon.classList.add('fa-bars');
@@ -48,83 +48,17 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // 4. Skills Category Tabs
-  const filterTabs = document.querySelectorAll('.saas-filter-tab');
-  const skillCards = document.querySelectorAll('.skill-card-saas');
-
-  filterTabs.forEach(tab => {
-    tab.addEventListener('click', () => {
-      filterTabs.forEach(t => t.classList.remove('active'));
-      tab.classList.add('active');
-
-      const filter = tab.getAttribute('data-filter');
-
-      skillCards.forEach(card => {
-        const cat = card.getAttribute('data-cat');
-        if (filter === 'all' || cat === filter) {
-          card.classList.remove('hidden');
-        } else {
-          card.classList.add('hidden');
-        }
-      });
-    });
-  });
-
-  // 5. Resume Modal Preview
-  const resumeModal = document.getElementById('resume-modal');
-  const modalClose = document.getElementById('modal-close');
-  const resumeTriggers = [
-    document.getElementById('nav-resume-btn'),
-    document.getElementById('hero-open-resume'),
-    document.getElementById('about-open-resume'),
-    document.getElementById('cta-view-resume')
-  ];
-
-  function openResumeModal() {
-    if (resumeModal) {
-      resumeModal.classList.add('open');
-      resumeModal.setAttribute('aria-hidden', 'false');
-      document.body.style.overflow = 'hidden';
-    }
-  }
-
-  function closeResumeModal() {
-    if (resumeModal) {
-      resumeModal.classList.remove('open');
-      resumeModal.setAttribute('aria-hidden', 'true');
-      document.body.style.overflow = '';
-    }
-  }
-
-  resumeTriggers.forEach(btn => {
-    if (btn) btn.addEventListener('click', openResumeModal);
-  });
-
-  if (modalClose) {
-    modalClose.addEventListener('click', closeResumeModal);
-  }
-
-  if (resumeModal) {
-    resumeModal.addEventListener('click', (e) => {
-      if (e.target === resumeModal) closeResumeModal();
-    });
-  }
-
-  window.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape') closeResumeModal();
-  });
-
-  // 6. Direct Contact Form Mailto Handler
+  // 4. Contact Form Handler (Direct Mailto)
   const contactForm = document.getElementById('contact-form');
   if (contactForm) {
     contactForm.addEventListener('submit', (e) => {
       e.preventDefault();
-      const name = document.getElementById('c-name').value.trim();
-      const email = document.getElementById('c-email').value.trim();
-      const subject = document.getElementById('c-subject').value.trim();
-      const message = document.getElementById('c-message').value.trim();
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const subject = document.getElementById('subject').value.trim();
+      const message = document.getElementById('message').value.trim();
 
-      const mailtoUrl = `mailto:sreejithvm65@gmail.com?subject=${encodeURIComponent(subject || 'Opportunity Inquiry')}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`)}`;
+      const mailtoUrl = `mailto:sreejithvm65@gmail.com?subject=${encodeURIComponent(subject || 'Portfolio Inquiry')}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`)}`;
       window.location.href = mailtoUrl;
     });
   }
