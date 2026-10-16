@@ -3,50 +3,62 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sreejith M | Portfolio - Data Engineering &amp; Full-Stack Developer</title>
-  <meta name="description" content="Personal Portfolio of Sreejith M - Data Engineering Intern at akumenbyQ & B.Tech CS & Design Graduate. Specializing in Microsoft SQL Server, Azure Data Factory, Databricks, Power BI, and MERN Stack.">
+  <title>Sreejith M | Portfolio — Data Engineering &amp; Full-Stack Developer</title>
+  <meta name="description" content="Portfolio of Sreejith M. Data Engineering Intern at akumenbyQ & B.Tech CS & Design Graduate. Specializing in SQL Server, Azure Data Factory, Databricks, Power BI, and MERN Stack.">
   <meta name="author" content="Sreejith M">
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Sreejith M | Portfolio - Data Engineering &amp; Full-Stack Developer">
-  <meta property="og:description" content="Data Engineering Intern at akumenbyQ. Skilled in SQL Server, Azure Data Factory, Databricks, Power BI, Microsoft Fabric, and MERN stack.">
+  <meta property="og:title" content="Sreejith M | Data Engineering & Software Portfolio">
+  <meta property="og:description" content="Data Engineering Intern at akumenbyQ. Transforming data into scalable architectures with SQL Server, Azure, Databricks, and MERN stack.">
   <meta property="og:image" content="assets/profile.png">
   <meta property="og:type" content="website">
 
-  <!-- Fonts & Icons -->
+  <!-- Google Fonts & FontAwesome -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- Header / Navigation -->
-  <header class="header" id="navbar">
+  <!-- Ambient Aurora & Glow Elements (Nixtio SaaS Style) -->
+  <div class="aurora-container">
+    <div class="aurora-glow aurora-purple"></div>
+    <div class="aurora-glow aurora-blue"></div>
+    <div class="aurora-glow aurora-cyan"></div>
+    <div class="grid-overlay"></div>
+  </div>
+
+  <!-- Header / Navigation Bar -->
+  <header class="saas-header" id="navbar">
     <div class="container header-container">
-      <a href="#home" class="logo">
-        <img src="assets/profile.png" alt="Sreejith M" class="logo-avatar">
-        <span class="logo-name">Sreejith<span class="accent">.M</span></span>
+      <a href="#home" class="brand-logo">
+        <img src="assets/profile.png" alt="Sreejith M" class="nav-avatar">
+        <span class="logo-name">Sreejith<span class="accent-dot">.m</span></span>
       </a>
 
-      <nav class="nav-menu" id="nav-menu">
-        <a href="#about" class="nav-link">About</a>
-        <a href="#experience" class="nav-link">Experience</a>
-        <a href="#skills" class="nav-link">Skills</a>
-        <a href="#education" class="nav-link">Education</a>
-        <a href="#contact" class="nav-link">Contact</a>
-        <a href="Profile.pdf" target="_blank" class="nav-resume-btn">
-          <i class="fa-solid fa-file-pdf"></i> Resume
-        </a>
+      <nav class="nav-links" id="nav-links">
+        <a href="#about" class="nav-item">About</a>
+        <a href="#experience" class="nav-item">Experience</a>
+        <a href="#domains" class="nav-item">Capabilities</a>
+        <a href="#skills" class="nav-item">Stack</a>
+        <a href="#education" class="nav-item">Education</a>
+        <a href="#contact" class="nav-item">Contact</a>
       </nav>
 
-      <div class="header-actions">
-        <button id="theme-btn" class="theme-toggle-btn" aria-label="Toggle Dark/Light Mode" title="Toggle Theme">
+      <div class="header-cta-group">
+        <button id="theme-btn" class="theme-btn" aria-label="Toggle Theme" title="Toggle Theme">
           <i class="fa-solid fa-moon dark-icon"></i>
           <i class="fa-solid fa-sun light-icon"></i>
         </button>
-        <button id="mobile-toggle" class="mobile-toggle-btn" aria-label="Toggle Menu">
+
+        <button id="nav-resume-btn" class="btn btn-glass btn-sm">
+          <i class="fa-solid fa-file-arrow-down"></i>
+          <span>Resume (PDF)</span>
+        </button>
+
+        <button id="mobile-toggle" class="mobile-toggle" aria-label="Toggle Navigation">
           <i class="fa-solid fa-bars"></i>
         </button>
       </div>
@@ -54,137 +66,336 @@
   </header>
 
   <main>
-    <!-- HERO SECTION -->
-    <section id="home" class="hero">
+    <!-- HERO SECTION (AI SaaS LANDING STYLE) -->
+    <section id="home" class="hero-section">
       <div class="container hero-container">
-        <!-- Photo Column -->
-        <div class="hero-photo-col">
-          <div class="photo-wrapper">
-            <img src="assets/profile.png" alt="Sreejith M" class="hero-photo">
-            <div class="photo-status-badge">
-              <span class="status-dot"></span>
-              <span>Open to Opportunities</span>
-            </div>
-          </div>
+        <!-- Floating Pill / Kicker -->
+        <div class="saas-badge-kicker">
+          <span class="kicker-sparkle"><i class="fa-solid fa-sparkles"></i></span>
+          <span class="kicker-pulse"></span>
+          <span class="kicker-text">Data Engineering Intern at <strong>akumenbyQ</strong></span>
+          <i class="fa-solid fa-arrow-right-long kicker-arrow"></i>
         </div>
 
-        <!-- Text Column -->
-        <div class="hero-text-col">
-          <div class="role-pill">
-            <i class="fa-solid fa-briefcase"></i> Data Engineering Intern @ akumenbyQ
+        <!-- Main Headline -->
+        <h1 class="hero-heading">
+          Engineering High-Performance
+          <span class="gradient-text">Data &amp; Web Systems</span>
+        </h1>
+
+        <p class="hero-subtext">
+          Hi, I'm <strong>Sreejith M</strong> &mdash; a B.Tech Computer Science &amp; Design graduate and aspiring Data Engineer. 
+          Specializing in <strong>Microsoft SQL Server</strong>, stored procedures, <strong>Azure Data Factory</strong>, 
+          <strong>Databricks</strong>, <strong>Power BI</strong>, and production-ready <strong>MERN stack</strong> applications.
+        </p>
+
+        <!-- CTA Buttons -->
+        <div class="hero-cta-wrapper">
+          <button id="hero-open-resume" class="btn btn-gradient btn-glow">
+            <span>View Verified Profile (PDF)</span>
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </button>
+          <a href="#contact" class="btn btn-secondary-glass">
+            <i class="fa-solid fa-paper-plane"></i>
+            <span>Get in Touch</span>
+          </a>
+          <a href="https://www.linkedin.com/in/sreejith-m8" target="_blank" rel="noopener noreferrer" class="btn btn-icon-glass" aria-label="LinkedIn">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+        </div>
+
+        <!-- Tech Stack Ticker -->
+        <div class="hero-tech-strip">
+          <div class="tech-item"><i class="fa-solid fa-database"></i> SQL Server</div>
+          <div class="tech-divider">/</div>
+          <div class="tech-item"><i class="fa-solid fa-cloud"></i> Azure Data Factory</div>
+          <div class="tech-divider">/</div>
+          <div class="tech-item"><i class="fa-solid fa-cubes"></i> Databricks</div>
+          <div class="tech-divider">/</div>
+          <div class="tech-item"><i class="fa-solid fa-chart-column"></i> Power BI</div>
+          <div class="tech-divider">/</div>
+          <div class="tech-item"><i class="fa-solid fa-layer-group"></i> Microsoft Fabric</div>
+          <div class="tech-divider">/</div>
+          <div class="tech-item"><i class="fa-brands fa-react"></i> MERN Stack</div>
+        </div>
+
+        <!-- HERO SHOWCASE CARD (Nixtio Floating Dashboard & Real Photo) -->
+        <div class="hero-dashboard-card" id="dashboard-card">
+          <div class="dashboard-top-bar">
+            <div class="window-controls">
+              <span class="win-dot dot-red"></span>
+              <span class="win-dot dot-yellow"></span>
+              <span class="win-dot dot-green"></span>
+            </div>
+            <div class="window-pill">
+              <i class="fa-solid fa-shield-check"></i> Sreejith M &bull; Kochi, Kerala, India
+            </div>
+            <div class="window-status">
+              <span class="status-indicator"></span> Live Data Pipeline
+            </div>
           </div>
 
-          <h1 class="hero-name">Sreejith M</h1>
-          <p class="hero-tagline">Data Engineering Intern &bull; B.Tech Computer Science &amp; Design Graduate &bull; Aspiring Data Engineer</p>
+          <div class="dashboard-body-grid">
+            <!-- Left: Real Photo & Identity Box -->
+            <div class="profile-portrait-column">
+              <div class="portrait-container">
+                <img src="assets/profile.png" alt="Sreejith M" class="portrait-img">
+                <div class="portrait-gradient-overlay"></div>
+                <div class="portrait-glow-ring"></div>
 
-          <p class="hero-intro">
-            Welcome to my portfolio! I specialize in <strong>Microsoft SQL Server</strong>, relational database design, query optimization, 
-            and modern cloud tools like <strong>Azure Data Factory</strong>, <strong>Databricks</strong>, and <strong>Power BI</strong>, 
-            complemented by hands-on full-stack development experience in the <strong>MERN stack</strong>.
-          </p>
+                <!-- Floating Chip 1 -->
+                <div class="floating-chip chip-left">
+                  <div class="chip-icon"><i class="fa-solid fa-database"></i></div>
+                  <div class="chip-content">
+                    <span class="chip-title">SQL Server</span>
+                    <span class="chip-sub">Stored Procs &bull; Views</span>
+                  </div>
+                </div>
 
-          <div class="hero-quick-skills">
-            <span class="skill-chip"><i class="fa-solid fa-database"></i> SQL Server</span>
-            <span class="skill-chip"><i class="fa-solid fa-cloud"></i> Azure Data Factory</span>
-            <span class="skill-chip"><i class="fa-solid fa-cubes"></i> Databricks</span>
-            <span class="skill-chip"><i class="fa-solid fa-chart-column"></i> Power BI</span>
-            <span class="skill-chip"><i class="fa-solid fa-layer-group"></i> Microsoft Fabric</span>
-            <span class="skill-chip"><i class="fa-brands fa-react"></i> React &bull; Node.js</span>
-          </div>
+                <!-- Floating Chip 2 -->
+                <div class="floating-chip chip-right">
+                  <div class="chip-icon green"><i class="fa-solid fa-circle-check"></i></div>
+                  <div class="chip-content">
+                    <span class="chip-title">Production Ready</span>
+                    <span class="chip-sub">MERN &bull; Cloud ETL</span>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-          <div class="hero-cta-group">
-            <a href="Profile.pdf" target="_blank" class="btn btn-primary">
-              <i class="fa-solid fa-file-pdf"></i> View Resume (PDF)
-            </a>
-            <a href="#contact" class="btn btn-secondary">
-              <i class="fa-solid fa-paper-plane"></i> Contact Me
-            </a>
-            <a href="https://www.linkedin.com/in/sreejith-m8" target="_blank" rel="noopener noreferrer" class="btn btn-outline" aria-label="LinkedIn">
-              <i class="fa-brands fa-linkedin"></i> LinkedIn
-            </a>
-          </div>
+            <!-- Right: Interactive Metrics & Live Telemetry -->
+            <div class="dashboard-telemetry-column">
+              <div class="telemetry-header">
+                <div>
+                  <h3 class="telemetry-heading">System Telemetry &amp; Skill Matrix</h3>
+                  <p class="telemetry-sub">Real-time competencies and live engineering focus</p>
+                </div>
+                <span class="latency-badge"><i class="fa-solid fa-bolt"></i> Active Role</span>
+              </div>
 
-          <div class="hero-location-meta">
-            <span><i class="fa-solid fa-location-dot"></i> Kochi, Kerala, India</span>
-            <span class="divider">&bull;</span>
-            <a href="mailto:sreejithvm65@gmail.com"><i class="fa-solid fa-envelope"></i> sreejithvm65@gmail.com</a>
+              <div class="telemetry-metric-cards">
+                <div class="telemetry-metric">
+                  <span class="metric-num">akumenbyQ</span>
+                  <span class="metric-label">Data Engineering Intern (Present)</span>
+                  <div class="metric-progress-bar"><div class="metric-fill" style="width: 100%;"></div></div>
+                </div>
+
+                <div class="telemetry-metric">
+                  <span class="metric-num">Luminar Technolab</span>
+                  <span class="metric-label">MERN Stack Web Developer</span>
+                  <div class="metric-progress-bar"><div class="metric-fill" style="width: 100%;"></div></div>
+                </div>
+
+                <div class="telemetry-metric">
+                  <span class="metric-num">Viswajyothi / KTU</span>
+                  <span class="metric-label">B.Tech Computer Science &amp; Design</span>
+                  <div class="metric-progress-bar"><div class="metric-fill" style="width: 100%;"></div></div>
+                </div>
+
+                <div class="telemetry-metric">
+                  <span class="metric-num">Enterprise Stack</span>
+                  <span class="metric-label">SQL Server, Azure, Databricks, Fabric</span>
+                  <div class="metric-progress-bar"><div class="metric-fill" style="width: 100%;"></div></div>
+                </div>
+              </div>
+
+              <!-- Mini Query Visual Box -->
+              <div class="code-terminal-snippet">
+                <div class="terminal-header">
+                  <i class="fa-solid fa-terminal"></i>
+                  <span>query_executor.sql</span>
+                </div>
+                <pre class="terminal-code"><code><span class="c-keyword">SELECT</span> candidate, role, skills, status
+<span class="c-keyword">FROM</span> engineering_talents
+<span class="c-keyword">WHERE</span> candidate = <span class="c-string">'Sreejith M'</span>
+  <span class="c-keyword">AND</span> is_open_for_roles = <span class="c-bool">TRUE</span>;
+<span class="c-comment">-- Status: [AVAILABLE] High-performance SQL, Data Engineering &amp; MERN</span></code></pre>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ABOUT SECTION -->
-    <section id="about" class="section section-alt">
+    <!-- ABOUT SECTION (BENTO STYLE) -->
+    <section id="about" class="section">
       <div class="container">
-        <div class="section-title-wrap">
-          <h2 class="section-title">About Me</h2>
-          <p class="section-subtitle">Background, education, and technical journey</p>
+        <div class="section-badge-header">
+          <span class="saas-pill"><i class="fa-solid fa-user"></i> Background</span>
+          <h2 class="section-title">About <span class="gradient-text">Sreejith M</span></h2>
+          <p class="section-desc">Computer Science &amp; Design foundation tailored for enterprise data pipelines and scalable software.</p>
         </div>
 
-        <div class="about-card">
-          <div class="about-content">
-            <p>
-              I am a <strong>B.Tech Computer Science and Design</strong> graduate from <strong>Viswajyothi College of Engineering and Technology</strong>, affiliated with <strong>APJ Abdul Kalam Technological University (KTU)</strong>. I have a strong foundation in database architecture, software engineering, and analytical problem-solving.
+        <div class="bento-grid-about">
+          <!-- Big Bio Bento Card -->
+          <div class="bento-card bento-wide">
+            <div class="bento-glow"></div>
+            <div class="card-icon-head"><i class="fa-solid fa-brain"></i></div>
+            <h3 class="bento-title">Engineering Mindset &amp; Practical Experience</h3>
+            <p class="bento-text">
+              I'm a <strong>B.Tech Computer Science and Design</strong> graduate from <strong>Viswajyothi College of Engineering and Technology</strong> (affiliated with <em>APJ Abdul Kalam Technological University</em>). My core interests center around <strong>data engineering</strong>, database design, query optimization, and modern web application development.
             </p>
-            <p>
-              Currently, I am working as a <strong>Data Engineering Intern at akumenbyQ</strong> in Kochi. My day-to-day responsibilities involve working with <strong>Microsoft SQL Server</strong>, relational database management, creating and maintaining database objects such as <strong>views and stored procedures</strong>, and authoring optimized SQL queries utilizing complex joins, subqueries, and aggregations.
+            <p class="bento-text">
+              Currently working as a <strong>Data Engineering Intern at akumenbyQ</strong>, I gain deep practical experience with <strong>Microsoft SQL Server</strong>, relational database structures, complex query writing (joins, correlated subqueries, aggregate calculations), and developing mission-critical database objects like <strong>views and stored procedures</strong>.
             </p>
-            <p>
-              Previously, I gained valuable practical experience as a <strong>MERN Stack Developer at Luminar Technolab</strong>, where I worked with MongoDB, Express.js, React.js, and Node.js to engineer full-stack web applications. In addition, holding roles as a <strong>Campus Ambassador at TECHMAGHI</strong> and <strong>Marketing Intern at Corizo</strong> helped me hone my communication, team coordination, and leadership skills.
+            <p class="bento-text">
+              Previously, I developed hands-on web applications as a <strong>MERN Stack Developer at Luminar Technolab</strong>, working with MongoDB, Express.js, React.js, and Node.js. My leadership roles as a <strong>Campus Ambassador at TECHMAGHI</strong> and <strong>Marketing Intern at Corizo</strong> strengthened my technical communication, outreach, and collaborative team skills.
             </p>
           </div>
 
-          <div class="about-stats-grid">
-            <div class="stat-box">
-              <span class="stat-number">B.Tech</span>
-              <span class="stat-label">Computer Science &amp; Design (KTU)</span>
+          <!-- Snapshot Bento Card -->
+          <div class="bento-card">
+            <div class="bento-glow"></div>
+            <div class="about-portrait-thumb">
+              <img src="assets/profile.png" alt="Sreejith M at work" class="about-thumb-img">
+              <div class="about-thumb-overlay">
+                <span class="thumb-tag"><i class="fa-solid fa-code"></i> Data &amp; Software Engineer</span>
+              </div>
             </div>
-            <div class="stat-box">
-              <span class="stat-number">akumenbyQ</span>
-              <span class="stat-label">Data Engineering Intern (Present)</span>
+
+            <ul class="bento-meta-list" style="margin-top: 1.25rem;">
+              <li>
+                <span class="b-label"><i class="fa-solid fa-user-tag"></i> Name</span>
+                <span class="b-val">Sreejith M</span>
+              </li>
+              <li>
+                <span class="b-label"><i class="fa-solid fa-location-dot"></i> Location</span>
+                <span class="b-val">Kochi, Kerala, India</span>
+              </li>
+              <li>
+                <span class="b-label"><i class="fa-solid fa-graduation-cap"></i> Degree</span>
+                <span class="b-val">B.Tech CS &amp; Design</span>
+              </li>
+              <li>
+                <span class="b-label"><i class="fa-solid fa-envelope"></i> Email</span>
+                <a href="mailto:sreejithvm65@gmail.com" class="b-val link">sreejithvm65@gmail.com</a>
+              </li>
+              <li>
+                <span class="b-label"><i class="fa-brands fa-linkedin"></i> LinkedIn</span>
+                <a href="https://www.linkedin.com/in/sreejith-m8" target="_blank" rel="noopener noreferrer" class="b-val link">sreejith-m8</a>
+              </li>
+            </ul>
+
+            <button id="about-open-resume" class="btn btn-gradient btn-sm" style="width: 100%; margin-top: 1.25rem;">
+              <i class="fa-solid fa-file-pdf"></i> View Official Resume
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CORE CAPABILITIES / DOMAINS SECTION -->
+    <section id="domains" class="section section-dark">
+      <div class="container">
+        <div class="section-badge-header">
+          <span class="saas-pill"><i class="fa-solid fa-layer-group"></i> Core Capabilities</span>
+          <h2 class="section-title">Specialized <span class="gradient-text">Focus Areas</span></h2>
+          <p class="section-desc">Key domains of expertise across data infrastructure, cloud ecosystems, and full-stack software.</p>
+        </div>
+
+        <div class="capabilities-grid">
+          <!-- Card 1 -->
+          <div class="feature-card">
+            <div class="feature-glow"></div>
+            <div class="feature-icon"><i class="fa-solid fa-database"></i></div>
+            <h3 class="feature-title">Relational Databases &amp; SQL</h3>
+            <p class="feature-desc">
+              Designing normalized schemas, writing high-performance SQL queries with multi-table joins, subqueries, and building robust stored procedures, views, and indexes in Microsoft SQL Server.
+            </p>
+            <div class="feature-tags">
+              <span>SQL Server</span>
+              <span>Joins &amp; Subqueries</span>
+              <span>Stored Procedures</span>
+              <span>Views</span>
             </div>
-            <div class="stat-box">
-              <span class="stat-number">MERN</span>
-              <span class="stat-label">Full-Stack Development (Luminar)</span>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="feature-card">
+            <div class="feature-glow"></div>
+            <div class="feature-icon"><i class="fa-solid fa-cloud-arrow-up"></i></div>
+            <h3 class="feature-title">Cloud Data &amp; ETL Pipelines</h3>
+            <p class="feature-desc">
+              Harnessing modern cloud platforms including Azure Data Factory for ETL orchestration, Databricks for distributed data lake processing, Microsoft Fabric for unified analytics, and Power BI.
+            </p>
+            <div class="feature-tags">
+              <span>Azure Data Factory</span>
+              <span>Databricks</span>
+              <span>Power BI</span>
+              <span>Microsoft Fabric</span>
             </div>
-            <div class="stat-box">
-              <span class="stat-number">Cloud Data</span>
-              <span class="stat-label">Azure, Databricks &amp; Power BI</span>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="feature-card">
+            <div class="feature-glow"></div>
+            <div class="feature-icon"><i class="fa-brands fa-react"></i></div>
+            <h3 class="feature-title">Full-Stack MERN Engineering</h3>
+            <p class="feature-desc">
+              Building dynamic, responsive web applications using MongoDB, Express.js, React.js, and Node.js with clean state management, modular RESTful APIs, and pixel-precise UI execution.
+            </p>
+            <div class="feature-tags">
+              <span>React.js</span>
+              <span>Node.js &amp; Express</span>
+              <span>MongoDB</span>
+              <span>REST APIs</span>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- WORK EXPERIENCE SECTION -->
+    <!-- WORK EXPERIENCE TIMELINE -->
     <section id="experience" class="section">
       <div class="container">
-        <div class="section-title-wrap">
-          <h2 class="section-title">Work Experience</h2>
-          <p class="section-subtitle">Professional roles and internships</p>
+        <div class="section-badge-header">
+          <span class="saas-pill"><i class="fa-solid fa-briefcase"></i> Work History</span>
+          <h2 class="section-title">Professional <span class="gradient-text">Experience</span></h2>
+          <p class="section-desc">Hands-on contributions in live database engineering and production web development.</p>
         </div>
 
-        <div class="timeline">
-          <!-- akumenbyQ -->
-          <div class="timeline-item active-item">
-            <div class="timeline-indicator">
-              <i class="fa-solid fa-database"></i>
+        <div class="timeline-wrapper">
+          <!-- Role 1 -->
+          <div class="timeline-row active-now">
+            <div class="timeline-bullet">
+              <span class="bullet-inner"></span>
             </div>
-            <div class="timeline-body">
-              <div class="timeline-header">
+            <div class="timeline-card-saas">
+              <div class="timeline-top-bar">
                 <div>
-                  <h3 class="timeline-role">Data Engineering Intern</h3>
-                  <h4 class="timeline-company"><i class="fa-solid fa-building"></i> akumenbyQ &bull; Kochi, Kerala</h4>
+                  <div class="role-badge-row">
+                    <h3 class="role-name">Data Engineering Intern</h3>
+                    <span class="status-chip-live"><span class="chip-dot"></span> Present Role</span>
+                  </div>
+                  <h4 class="company-name"><i class="fa-solid fa-building"></i> akumenbyQ &bull; Kochi, Kerala</h4>
                 </div>
-                <span class="timeline-badge-date">August 2026 &ndash; Present</span>
+                <span class="role-timeline-badge"><i class="fa-regular fa-calendar"></i> August 2026 &ndash; Present</span>
               </div>
-              <ul class="timeline-list">
-                <li>Working with <strong>Microsoft SQL Server</strong> and relational database management.</li>
-                <li>Writing performant SQL queries using multi-table joins, subqueries, and aggregate functions.</li>
-                <li>Creating and maintaining database objects including <strong>views and stored procedures</strong> for data management.</li>
-                <li>Learning data processing, database design, and end-to-end data engineering fundamentals.</li>
-              </ul>
-              <div class="timeline-tags">
+
+              <p class="role-description">
+                Engaged in live database engineering, query optimization, and foundational data pipeline development in SQL Server.
+              </p>
+
+              <div class="role-points-list">
+                <div class="point-item">
+                  <i class="fa-solid fa-check"></i>
+                  <span>Administering relational database structures in <strong>Microsoft SQL Server</strong> and enforcing referential integrity.</span>
+                </div>
+                <div class="point-item">
+                  <i class="fa-solid fa-check"></i>
+                  <span>Authoring performant SQL queries utilizing complex joins, correlated subqueries, and aggregate functions.</span>
+                </div>
+                <div class="point-item">
+                  <i class="fa-solid fa-check"></i>
+                  <span>Designing, building, and testing <strong>views and stored procedures</strong> to streamline data retrieval and updates.</span>
+                </div>
+                <div class="point-item">
+                  <i class="fa-solid fa-check"></i>
+                  <span>Deepening domain expertise in data management, processing workflows, and scalable database design.</span>
+                </div>
+              </div>
+
+              <div class="role-pill-tags">
                 <span>SQL Server</span>
                 <span>Relational Databases</span>
                 <span>Stored Procedures</span>
@@ -194,24 +405,36 @@
             </div>
           </div>
 
-          <!-- Luminar Technolab -->
-          <div class="timeline-item">
-            <div class="timeline-indicator">
-              <i class="fa-brands fa-react"></i>
+          <!-- Role 2 -->
+          <div class="timeline-row">
+            <div class="timeline-bullet">
+              <span class="bullet-inner"></span>
             </div>
-            <div class="timeline-body">
-              <div class="timeline-header">
+            <div class="timeline-card-saas">
+              <div class="timeline-top-bar">
                 <div>
-                  <h3 class="timeline-role">MERN Stack Developer</h3>
-                  <h4 class="timeline-company"><i class="fa-solid fa-building"></i> Luminar Technolab</h4>
+                  <h3 class="role-name">MERN Stack Developer</h3>
+                  <h4 class="company-name"><i class="fa-solid fa-building"></i> Luminar Technolab</h4>
                 </div>
-                <span class="timeline-badge-date">June 2025 &ndash; July 2025</span>
+                <span class="role-timeline-badge"><i class="fa-regular fa-calendar"></i> June 2025 &ndash; July 2025</span>
               </div>
-              <ul class="timeline-list">
-                <li>Worked with <strong>MongoDB, Express.js, React.js, and Node.js</strong> to build full-stack web applications.</li>
-                <li>Designed responsive frontends and connected client applications with backend RESTful APIs.</li>
-              </ul>
-              <div class="timeline-tags">
+
+              <p class="role-description">
+                Full-stack web application engineering using MongoDB, Express.js, React.js, and Node.js.
+              </p>
+
+              <div class="role-points-list">
+                <div class="point-item">
+                  <i class="fa-solid fa-check"></i>
+                  <span>Built interactive user interfaces with React.js and reusable component hierarchies.</span>
+                </div>
+                <div class="point-item">
+                  <i class="fa-solid fa-check"></i>
+                  <span>Created backend REST endpoints in Express.js/Node.js connected to MongoDB collections.</span>
+                </div>
+              </div>
+
+              <div class="role-pill-tags">
                 <span>React.js</span>
                 <span>Node.js</span>
                 <span>Express.js</span>
@@ -221,105 +444,154 @@
             </div>
           </div>
 
-          <!-- Outreach & Campus -->
-          <div class="timeline-item">
-            <div class="timeline-indicator">
-              <i class="fa-solid fa-users"></i>
+          <!-- Role 3 -->
+          <div class="timeline-row">
+            <div class="timeline-bullet">
+              <span class="bullet-inner"></span>
             </div>
-            <div class="timeline-body">
-              <div class="timeline-header">
+            <div class="timeline-card-saas">
+              <div class="timeline-top-bar">
                 <div>
-                  <h3 class="timeline-role">Campus Leadership &amp; Marketing Roles</h3>
-                  <h4 class="timeline-company"><i class="fa-solid fa-globe"></i> TECHMAGHI &bull; Corizo &bull; SkillVertex</h4>
+                  <h3 class="role-name">Campus Leadership &amp; Marketing Roles</h3>
+                  <h4 class="company-name"><i class="fa-solid fa-users"></i> TECHMAGHI &bull; Corizo &bull; SkillVertex</h4>
                 </div>
-                <span class="timeline-badge-date">2024 &ndash; 2025</span>
+                <span class="role-timeline-badge"><i class="fa-regular fa-calendar"></i> 2024 &ndash; 2025</span>
               </div>
-              <ul class="timeline-list">
-                <li><strong>Campus Ambassador at TECHMAGHI</strong> (Feb 2024 &ndash; Jun 2025): Spearheaded campus outreach, technical workshops, and student community initiatives.</li>
-                <li><strong>Marketing Intern at Corizo</strong> (Oct 2024 &ndash; Mar 2025): Developed communication and marketing campaigns.</li>
-                <li><strong>Campus Executive at SkillVertex</strong> (Jul 2024 &ndash; Mar 2025): Coordinated campus engagement and peer learning.</li>
-              </ul>
+
+              <div class="role-points-list">
+                <div class="point-item">
+                  <i class="fa-solid fa-check"></i>
+                  <span><strong>Campus Ambassador at TECHMAGHI</strong> (Feb 2024 &ndash; Jun 2025): Spearheaded campus tech community engagement.</span>
+                </div>
+                <div class="point-item">
+                  <i class="fa-solid fa-check"></i>
+                  <span><strong>Marketing Intern at Corizo</strong> (Oct 2024 &ndash; Mar 2025): Coordinated communication and technology outreach campaigns.</span>
+                </div>
+                <div class="point-item">
+                  <i class="fa-solid fa-check"></i>
+                  <span><strong>Campus Executive at SkillVertex</strong> (Jul 2024 &ndash; Mar 2025): Led student cohort workshops and engagement programs.</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- TECHNICAL SKILLS SECTION -->
-    <section id="skills" class="section section-alt">
+    <!-- TECHNICAL SKILLS MATRIX -->
+    <section id="skills" class="section section-dark">
       <div class="container">
-        <div class="section-title-wrap">
-          <h2 class="section-title">Technical Skills</h2>
-          <p class="section-subtitle">Core proficiencies across data engineering, cloud, and web development</p>
+        <div class="section-badge-header">
+          <span class="saas-pill"><i class="fa-solid fa-microchip"></i> Stack Matrix</span>
+          <h2 class="section-title">Technical <span class="gradient-text">Skills</span></h2>
+          <p class="section-desc">Technologies, platforms, and methodologies utilized across software engineering and data workflows.</p>
         </div>
 
-        <div class="skills-grid">
-          <!-- Skill Column 1: Data & Cloud -->
-          <div class="skill-category-card">
-            <div class="category-header">
-              <i class="fa-solid fa-database category-icon"></i>
-              <h3>Data &amp; Cloud</h3>
+        <div class="skills-tab-filter">
+          <button class="saas-filter-tab active" data-filter="all">All Technologies</button>
+          <button class="saas-filter-tab" data-filter="data">Data &amp; Cloud</button>
+          <button class="saas-filter-tab" data-filter="web">Web &amp; Backend</button>
+          <button class="saas-filter-tab" data-filter="core">Languages &amp; Core</button>
+        </div>
+
+        <div class="saas-skills-grid">
+          <!-- Data -->
+          <div class="skill-card-saas" data-cat="data">
+            <div class="skill-icon-bubble" style="color: #38bdf8; background: rgba(56, 189, 248, 0.1);"><i class="fa-solid fa-database"></i></div>
+            <div class="skill-meta">
+              <h4>Microsoft SQL Server</h4>
+              <p>Relational schemas, indexing, stored procedures &amp; views</p>
             </div>
-            <ul class="skill-item-list">
-              <li>
-                <span class="skill-name">Microsoft SQL Server</span>
-                <span class="skill-desc">Relational database administration, queries &amp; views</span>
-              </li>
-              <li>
-                <span class="skill-name">SQL Programming</span>
-                <span class="skill-desc">Joins, subqueries, aggregations, stored procedures</span>
-              </li>
-              <li>
-                <span class="skill-name">Azure Data Factory</span>
-                <span class="skill-desc">Cloud ETL pipelines &amp; data orchestration</span>
-              </li>
-              <li>
-                <span class="skill-name">Power BI</span>
-                <span class="skill-desc">Data visualization, reporting dashboards</span>
-              </li>
-              <li>
-                <span class="skill-name">Databricks</span>
-                <span class="skill-desc">Distributed lakehouse processing concepts</span>
-              </li>
-              <li>
-                <span class="skill-name">Microsoft Fabric</span>
-                <span class="skill-desc">Unified enterprise data analytics platform</span>
-              </li>
-            </ul>
           </div>
 
-          <!-- Skill Column 2: Web & Backend -->
-          <div class="skill-category-card">
-            <div class="category-header">
-              <i class="fa-solid fa-code category-icon"></i>
-              <h3>Full-Stack &amp; Programming</h3>
+          <div class="skill-card-saas" data-cat="data">
+            <div class="skill-icon-bubble" style="color: #60a5fa; background: rgba(96, 165, 250, 0.1);"><i class="fa-solid fa-table"></i></div>
+            <div class="skill-meta">
+              <h4>SQL Query Engineering</h4>
+              <p>Complex multi-table joins, subqueries &amp; aggregations</p>
             </div>
-            <ul class="skill-item-list">
-              <li>
-                <span class="skill-name">React.js</span>
-                <span class="skill-desc">Frontend UI, component architecture, hooks</span>
-              </li>
-              <li>
-                <span class="skill-name">Node.js &amp; Express.js</span>
-                <span class="skill-desc">Server-side RESTful APIs &amp; backend routing</span>
-              </li>
-              <li>
-                <span class="skill-name">MongoDB</span>
-                <span class="skill-desc">NoSQL document modeling &amp; database queries</span>
-              </li>
-              <li>
-                <span class="skill-name">Python</span>
-                <span class="skill-desc">Data processing scripts, automation</span>
-              </li>
-              <li>
-                <span class="skill-name">JavaScript (ES6+)</span>
-                <span class="skill-desc">Modern async syntax, DOM &amp; web standards</span>
-              </li>
-              <li>
-                <span class="skill-name">Computer Science &amp; Design</span>
-                <span class="skill-desc">System design, UI/UX fundamentals, problem solving</span>
-              </li>
-            </ul>
+          </div>
+
+          <div class="skill-card-saas" data-cat="data">
+            <div class="skill-icon-bubble" style="color: #0078d4; background: rgba(0, 120, 212, 0.1);"><i class="fa-solid fa-cloud"></i></div>
+            <div class="skill-meta">
+              <h4>Azure Data Factory</h4>
+              <p>Cloud ETL pipelines &amp; data orchestration workflows</p>
+            </div>
+          </div>
+
+          <div class="skill-card-saas" data-cat="data">
+            <div class="skill-icon-bubble" style="color: #f2c811; background: rgba(242, 200, 17, 0.1);"><i class="fa-solid fa-chart-column"></i></div>
+            <div class="skill-meta">
+              <h4>Power BI</h4>
+              <p>Data visualization, reporting dashboards &amp; analytics</p>
+            </div>
+          </div>
+
+          <div class="skill-card-saas" data-cat="data">
+            <div class="skill-icon-bubble" style="color: #ff3621; background: rgba(255, 54, 33, 0.1);"><i class="fa-solid fa-cubes"></i></div>
+            <div class="skill-meta">
+              <h4>Databricks</h4>
+              <p>Lakehouse architectures &amp; distributed analytics concepts</p>
+            </div>
+          </div>
+
+          <div class="skill-card-saas" data-cat="data">
+            <div class="skill-icon-bubble" style="color: #a855f7; background: rgba(168, 85, 247, 0.1);"><i class="fa-solid fa-layer-group"></i></div>
+            <div class="skill-meta">
+              <h4>Microsoft Fabric</h4>
+              <p>Unified enterprise analytics, lakehouse &amp; data estate</p>
+            </div>
+          </div>
+
+          <!-- Web -->
+          <div class="skill-card-saas" data-cat="web">
+            <div class="skill-icon-bubble" style="color: #61dafb; background: rgba(97, 218, 251, 0.1);"><i class="fa-brands fa-react"></i></div>
+            <div class="skill-meta">
+              <h4>React.js</h4>
+              <p>Component-based stateful UIs, hooks &amp; responsive layouts</p>
+            </div>
+          </div>
+
+          <div class="skill-card-saas" data-cat="web">
+            <div class="skill-icon-bubble" style="color: #68a063; background: rgba(104, 160, 99, 0.1);"><i class="fa-brands fa-node-js"></i></div>
+            <div class="skill-meta">
+              <h4>Node.js &amp; Express.js</h4>
+              <p>Scalable RESTful API development &amp; server logic</p>
+            </div>
+          </div>
+
+          <div class="skill-card-saas" data-cat="web">
+            <div class="skill-icon-bubble" style="color: #10aa51; background: rgba(16, 170, 81, 0.1);"><i class="fa-solid fa-leaf"></i></div>
+            <div class="skill-meta">
+              <h4>MongoDB</h4>
+              <p>NoSQL document models, JSON schemas &amp; collections</p>
+            </div>
+          </div>
+
+          <!-- Core Languages -->
+          <div class="skill-card-saas" data-cat="core">
+            <div class="skill-icon-bubble" style="color: #3b82f6; background: rgba(59, 130, 246, 0.1);"><i class="fa-brands fa-python"></i></div>
+            <div class="skill-meta">
+              <h4>Python</h4>
+              <p>Data processing, automation scripts &amp; backend pipelines</p>
+            </div>
+          </div>
+
+          <div class="skill-card-saas" data-cat="core">
+            <div class="skill-icon-bubble" style="color: #f7df1e; background: rgba(247, 223, 30, 0.1);"><i class="fa-brands fa-js"></i></div>
+            <div class="skill-meta">
+              <h4>JavaScript (ES6+)</h4>
+              <p>Modern asynchronous syntax, event loop &amp; DOM manipulation</p>
+            </div>
+          </div>
+
+          <div class="skill-card-saas" data-cat="core">
+            <div class="skill-icon-bubble" style="color: #ec4899; background: rgba(236, 72, 153, 0.1);"><i class="fa-solid fa-compass-drafting"></i></div>
+            <div class="skill-meta">
+              <h4>Computer Science &amp; Design</h4>
+              <p>Systems thinking, human-computer interaction &amp; UX</p>
+            </div>
           </div>
         </div>
       </div>
@@ -328,22 +600,22 @@
     <!-- EDUCATION SECTION -->
     <section id="education" class="section">
       <div class="container">
-        <div class="section-title-wrap">
-          <h2 class="section-title">Education</h2>
-          <p class="section-subtitle">Academic qualifications</p>
+        <div class="section-badge-header">
+          <span class="saas-pill"><i class="fa-solid fa-graduation-cap"></i> Academics</span>
+          <h2 class="section-title">Education &amp; <span class="gradient-text">Affiliation</span></h2>
+          <p class="section-desc">Degree program bridging computational rigor with digital design principles.</p>
         </div>
 
-        <div class="education-card">
-          <div class="edu-icon">
-            <i class="fa-solid fa-graduation-cap"></i>
+        <div class="education-banner-card">
+          <div class="banner-badge-icon">
+            <i class="fa-solid fa-university"></i>
           </div>
-          <div class="edu-info">
-            <span class="edu-dates">September 2022 &ndash; June 2026</span>
-            <h3 class="edu-degree">Bachelor of Technology (B.Tech)</h3>
-            <h4 class="edu-branch">Computer Science and Design</h4>
-            <p class="edu-institution">Viswajyothi College of Engineering and Technology</p>
-            <p class="edu-location">Vazhakulam P.O., Muvattupuzha, Ernakulam, Kerala &ndash; 686670</p>
-            <div class="edu-affiliation-tag">
+          <div class="banner-body">
+            <div class="banner-timeline-tag"><i class="fa-regular fa-calendar"></i> September 2022 &ndash; June 2026</div>
+            <h3 class="banner-degree">Bachelor of Technology (B.Tech) in Computer Science &amp; Design</h3>
+            <h4 class="banner-inst">Viswajyothi College of Engineering and Technology</h4>
+            <p class="banner-loc"><i class="fa-solid fa-location-dot"></i> Vazhakulam P.O., Muvattupuzha, Ernakulam, Kerala &ndash; 686670</p>
+            <div class="banner-affil-chip">
               <i class="fa-solid fa-award"></i> Affiliated with <strong>APJ Abdul Kalam Technological University (KTU)</strong>
             </div>
           </div>
@@ -351,24 +623,25 @@
       </div>
     </section>
 
-    <!-- RESUME DOWNLOAD BANNER -->
-    <section class="section section-alt resume-section">
+    <!-- RESUME CALLOUT BANNER (SaaS CONVERSION STYLE) -->
+    <section class="section section-dark">
       <div class="container">
-        <div class="resume-banner">
-          <div class="resume-banner-text">
-            <i class="fa-solid fa-file-pdf resume-banner-icon"></i>
-            <div>
-              <h3>Looking for my complete resume?</h3>
-              <p>Download or view my verified Profile.pdf with complete academic and work experience details.</p>
+        <div class="saas-cta-box">
+          <div class="cta-glow"></div>
+          <div class="cta-content">
+            <span class="saas-pill"><i class="fa-solid fa-file-check"></i> Verified Credentials</span>
+            <h2 class="cta-heading">Review or Download My Verified <span class="gradient-text">Resume</span></h2>
+            <p class="cta-sub">
+              Access the complete profile detailing verified work experience at akumenbyQ, technical competencies, and academic credentials.
+            </p>
+            <div class="cta-actions">
+              <button id="cta-view-resume" class="btn btn-gradient btn-lg">
+                <i class="fa-solid fa-eye"></i> View Profile.pdf In-Page
+              </button>
+              <a href="Profile.pdf" download="Sreejith_M_Profile.pdf" class="btn btn-secondary-glass btn-lg">
+                <i class="fa-solid fa-download"></i> Download PDF
+              </a>
             </div>
-          </div>
-          <div class="resume-banner-actions">
-            <a href="Profile.pdf" target="_blank" class="btn btn-primary">
-              <i class="fa-solid fa-eye"></i> View PDF
-            </a>
-            <a href="Profile.pdf" download="Sreejith_M_Profile.pdf" class="btn btn-secondary">
-              <i class="fa-solid fa-download"></i> Download PDF
-            </a>
           </div>
         </div>
       </div>
@@ -377,62 +650,65 @@
     <!-- CONTACT SECTION -->
     <section id="contact" class="section">
       <div class="container">
-        <div class="section-title-wrap">
-          <h2 class="section-title">Contact Me</h2>
-          <p class="section-subtitle">Let's connect &mdash; feel free to reach out for opportunities or collaborations</p>
+        <div class="section-badge-header">
+          <span class="saas-pill"><i class="fa-solid fa-paper-plane"></i> Get In Touch</span>
+          <h2 class="section-title">Let's Connect &amp; <span class="gradient-text">Collaborate</span></h2>
+          <p class="section-desc">Open for Data Engineering, Backend, and Full-Stack opportunities.</p>
         </div>
 
-        <div class="contact-wrapper">
-          <!-- Contact Info Cards -->
-          <div class="contact-details-grid">
-            <a href="mailto:sreejithvm65@gmail.com" class="contact-item-card">
-              <div class="c-icon"><i class="fa-solid fa-envelope"></i></div>
-              <div class="c-text">
-                <span class="c-label">Email</span>
-                <span class="c-val">sreejithvm65@gmail.com</span>
+        <div class="contact-saas-grid">
+          <!-- Left Cards -->
+          <div class="contact-channels">
+            <a href="mailto:sreejithvm65@gmail.com" class="channel-card">
+              <div class="channel-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div class="channel-info">
+                <span class="channel-name">Direct Email</span>
+                <span class="channel-link">sreejithvm65@gmail.com</span>
               </div>
+              <i class="fa-solid fa-arrow-up-right-from-square channel-arrow"></i>
             </a>
 
-            <a href="https://www.linkedin.com/in/sreejith-m8" target="_blank" rel="noopener noreferrer" class="contact-item-card">
-              <div class="c-icon"><i class="fa-brands fa-linkedin"></i></div>
-              <div class="c-text">
-                <span class="c-label">LinkedIn</span>
-                <span class="c-val">linkedin.com/in/sreejith-m8</span>
+            <a href="https://www.linkedin.com/in/sreejith-m8" target="_blank" rel="noopener noreferrer" class="channel-card">
+              <div class="channel-icon"><i class="fa-brands fa-linkedin-in"></i></div>
+              <div class="channel-info">
+                <span class="channel-name">LinkedIn Profile</span>
+                <span class="channel-link">linkedin.com/in/sreejith-m8</span>
               </div>
+              <i class="fa-solid fa-arrow-up-right-from-square channel-arrow"></i>
             </a>
 
-            <div class="contact-item-card">
-              <div class="c-icon"><i class="fa-solid fa-location-dot"></i></div>
-              <div class="c-text">
-                <span class="c-label">Location</span>
-                <span class="c-val">Kochi, Kerala, India</span>
+            <div class="channel-card">
+              <div class="channel-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div class="channel-info">
+                <span class="channel-name">Location</span>
+                <span class="channel-link">Kochi, Kerala, India</span>
               </div>
             </div>
           </div>
 
-          <!-- Simple Contact Form -->
-          <div class="contact-form-box">
-            <form id="contact-form" class="simple-form">
-              <h3>Send a Message</h3>
+          <!-- Right Form -->
+          <div class="contact-form-saas">
+            <form id="contact-form" class="saas-form">
+              <h3 class="form-heading"><i class="fa-solid fa-message"></i> Send Direct Inquiry</h3>
               <div class="form-row">
-                <div class="form-group">
-                  <label for="name">Your Name</label>
-                  <input type="text" id="name" name="name" required placeholder="John Doe">
+                <div class="form-field">
+                  <label for="c-name">Name</label>
+                  <input type="text" id="c-name" name="name" required placeholder="Alex Mercer">
                 </div>
-                <div class="form-group">
-                  <label for="email">Your Email</label>
-                  <input type="email" id="email" name="email" required placeholder="john@example.com">
+                <div class="form-field">
+                  <label for="c-email">Email</label>
+                  <input type="email" id="c-email" name="email" required placeholder="alex@company.com">
                 </div>
               </div>
-              <div class="form-group">
-                <label for="subject">Subject</label>
-                <input type="text" id="subject" name="subject" required placeholder="Job Opportunity / Inquiry">
+              <div class="form-field">
+                <label for="c-subject">Subject</label>
+                <input type="text" id="c-subject" name="subject" required placeholder="Data Engineering / Opportunity Inquiry">
               </div>
-              <div class="form-group">
-                <label for="message">Message</label>
-                <textarea id="message" name="message" rows="4" required placeholder="Hi Sreejith, I came across your portfolio and wanted to reach out..."></textarea>
+              <div class="form-field">
+                <label for="c-message">Message</label>
+                <textarea id="c-message" name="message" rows="4" required placeholder="Hi Sreejith, we loved your background in SQL Server and data pipelines..."></textarea>
               </div>
-              <button type="submit" class="btn btn-primary btn-block">
+              <button type="submit" class="btn btn-gradient btn-lg" style="width: 100%;">
                 <i class="fa-solid fa-paper-plane"></i> Send Message
               </button>
             </form>
@@ -443,18 +719,48 @@
   </main>
 
   <!-- FOOTER -->
-  <footer class="footer">
-    <div class="container footer-container">
-      <div class="footer-left">
-        <span class="footer-name">Sreejith M</span>
-        <span class="footer-desc">&bull; Data Engineering Intern &bull; Kochi, Kerala</span>
+  <footer class="saas-footer">
+    <div class="container footer-saas-container">
+      <div class="footer-brand-col">
+        <a href="#home" class="brand-logo">
+          <img src="assets/profile.png" alt="Sreejith M" class="nav-avatar">
+          <span class="logo-name">Sreejith<span class="accent-dot">.m</span></span>
+        </a>
+        <p class="footer-sub">Data Engineering Intern at akumenbyQ &bull; B.Tech Computer Science &amp; Design</p>
       </div>
-      <div class="footer-right">
-        <p>&copy; <span id="year">2026</span> Sreejith M. All rights reserved.</p>
-        <a href="#home" class="back-to-top"><i class="fa-solid fa-arrow-up"></i> Top</a>
+
+      <div class="footer-copyright-col">
+        <p>&copy; <span id="year">2026</span> Sreejith M. Built with precision and modern web standards.</p>
+        <a href="#home" class="scroll-top-link"><i class="fa-solid fa-arrow-up"></i> Back to Top</a>
       </div>
     </div>
   </footer>
+
+  <!-- RESUME PREVIEW MODAL -->
+  <div id="resume-modal" class="modal-backdrop" aria-hidden="true">
+    <div class="modal-saas-box">
+      <div class="modal-saas-header">
+        <div class="modal-title-wrap">
+          <i class="fa-solid fa-file-pdf modal-pdf-icon"></i>
+          <div>
+            <h3>Sreejith M &mdash; Verified Profile</h3>
+            <span>Profile.pdf &bull; Updated 2026</span>
+          </div>
+        </div>
+        <div class="modal-header-actions">
+          <a href="Profile.pdf" download="Sreejith_M_Profile.pdf" class="btn btn-gradient btn-sm">
+            <i class="fa-solid fa-download"></i> Download
+          </a>
+          <button id="modal-close" class="modal-close-btn" aria-label="Close modal">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+      </div>
+      <div class="modal-saas-body">
+        <iframe src="Profile.pdf" class="pdf-viewer" title="Sreejith M Profile PDF"></iframe>
+      </div>
+    </div>
+  </div>
 
   <script src="script.js"></script>
 </body>
