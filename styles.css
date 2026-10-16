@@ -307,6 +307,16 @@ img {
   box-shadow: 0 4px 14px rgba(124, 58, 237, 0.4);
 }
 
+.nav-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center 15%;
+  border: 2px solid var(--accent-purple);
+  box-shadow: 0 0 12px rgba(168, 85, 247, 0.45);
+}
+
 .logo-name {
   color: var(--text-main);
 }
@@ -568,8 +578,8 @@ img {
 
 .portrait-container {
   position: relative;
-  width: 280px;
-  height: 350px;
+  width: 310px;
+  height: 390px;
   border-radius: var(--radius-md);
   overflow: visible;
 }
@@ -578,9 +588,9 @@ img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center 22%;
+  object-position: center 12%;
   border-radius: var(--radius-md);
-  border: 1px solid rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.18);
   box-shadow: var(--shadow-card);
 }
 
@@ -889,6 +899,49 @@ img {
 
 .bento-text strong {
   color: var(--text-main);
+}
+
+.about-portrait-thumb {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  border: 1px solid var(--border-subtle);
+}
+
+.about-thumb-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 15%;
+  transition: transform 0.3s ease;
+}
+
+.about-portrait-thumb:hover .about-thumb-img {
+  transform: scale(1.04);
+}
+
+.about-thumb-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0.75rem 1rem;
+  background: linear-gradient(180deg, transparent 0%, rgba(8, 9, 14, 0.88) 100%);
+  display: flex;
+  align-items: center;
+}
+
+.thumb-tag {
+  font-size: 0.775rem;
+  font-weight: 700;
+  color: var(--accent-cyan);
+  background: rgba(18, 20, 29, 0.85);
+  backdrop-filter: blur(8px);
+  border: 1px solid var(--border-subtle);
+  padding: 0.25rem 0.75rem;
+  border-radius: var(--radius-full);
 }
 
 .bento-meta-list {
